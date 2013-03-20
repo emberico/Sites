@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>EMBERI CO. // About Us</title>
+		<meta name="description" content="A design and development team that creates incredibly intuitive websites and software." />
+		<meta name="author" content="Ethan Bond and James Knight" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		
+		<base href="http://emberi.co" />
+		
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
+		
+		
+		<link rel="stylesheet" type="text/css" href="css/font-face.css">
+		<link rel="stylesheet" type="text/css" href="css/grid.css">
+		<link rel="stylesheet" type="text/css" href="css/ie.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/interior.css">
+		<style>
+		</style>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+
+				$(".header, .navigation").siblings().hide();
+				$(".header, .navigation").siblings().fadeIn();
+
+				var logoHeight = $(".header").height();
+				var headHeight = logoHeight + $(".navigation").height();
+				var photoHeight = $(window).height() - headHeight + 100;
+
+				$(".fullheight").height(photoHeight);
+
+				
+				//		if(originalTriangleOffset == undefined){
+				//			var originalTriangleOffset = $(".triangle").offset();
+				//			var originalTriangleOffset = originalTriangleOffset.left;
+				//		};
+				//
+				//
+				//		$(".triangle").css("left", function(){
+				//			var triangleOffset = $("li a.active").offset();
+				//			var triangleOffset = triangleOffset.left - originalTriangleOffset;
+				//			return triangleOffset;
+				//		});
+				//
+				//		var originalTrianglePosition = $(".triangle").css("left");
+				//
+				//		var offset = $("ul.horizontal").offset();
+				//		var offset = offset.left;
+				//
+				//		$("ul.horizontal").mousemove(function(e){
+				//			var xcoord = e.pageX;
+				//			var xcoord = xcoord - offset;
+				//			$(".triangle").css("left", xcoord);
+				//		});
+				//
+				//		$("ul.horizontal").mouseleave(function(){
+				//			$(".triangle").animate({left: originalTrianglePosition});
+				//		});
+				//
+
+			});
+
+		</script>
+	</head>
+	<body>
+		<section class="header fullwidth">
+			<header class="row">
+				<!--- <div class="col_12 centered" id="hs1">
+				<h5 class="sans bold white">WE ARE</h6>
+				</div>
+				---->
+				<a href="http://emberi.co">
+				<div class="col_12 centered" id="hsMain">
+					<p style="font-size: 10px; font-family:Helvetica, Arial, sans-serif; font-weight:bold; color: #7b7b7b;">
+						WEB, MOBILE, AND MORE
+					</p>
+				</div> </a>
+				<!--- <div class="col_12 centered" id="hs2">
+				<h5 class="sans bold white">A DESIGN + DEVELOPMENT DUO</h6>
+				<p style="font-size: 10px; font-family:Helvetica, Arial, sans-serif; font-weight:bold; color: #7b7b7b;">
+				WEB, MOBILE, AND MORE
+				</p>
+				</div>
+				---->
+			</header>
+		</section>
+		<section class="navigation fullwidth">
+			<nav class="row">
+				<div class="col_12 centered">
+					<ul class="horizontal">
+						<div class="triangle" style="margin-left: 284px;"></div>
+						<li class="first">
+							<a href="http://emberi.co">HOME</a>
+						</li>
+						<li>
+							<a href="blog/">BLOG</a>
+						</li>
+						<li>
+							<a href="clients/">CLIENTS</a>
+						</li>
+						<li>
+							<a href="aboutus/" class="active">ABOUT US</a>
+						</li>
+						<li>
+							<a href="contact/">CONTACT</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</section>
+		<section class="crossbar fullwidth" style="background: url('../images/rock.jpg') no-repeat center 50px fixed;">
+			<div class="row headbar">
+				<div class="col_12 centered">
+					<h1 class="big italic">We are Emberi Co.</h1>
+					<h5 class="sans subhead">
+						A US-based design and development duo<br>
+						that hand-crafts websites and apps that users  simply love to use.
+					</h5>
+				</div>
+			</div>
+		</section>
+		<section class="content fullwidth">
+			<div class="row contentarea">
+				<div class="col_6" id="ethan">
+					<h4 style="margin-bottom:-5px; margin-top:0;">Ethan Bond</h4>
+					<span class="subtitle">DESIGNER</span>
+					<p>
+						I'm a designer with a passion for the human condition.
+						I work with HTML5, CSS3, jQuery, and lots of other cool
+						stuff. My true love, however, is Photoshop. In here,
+						I create the recipes for Emberi Co.'s truly innovative, intuitive websites
+						and applications as well as effective, memorable brands.
+						I've worked with Creative Science Labs, Storm, and a <a href="projects/">few more</a> cool people.
+						I'm currently pursuing a B.S. in Computer Science and a
+						B.S. in Design, Innovation, and Society at Rensselaer
+						Polytechnic Institute in Troy, New York.
+						
+					</p>
+				</div>
+				<div class="col_6 last" style="">
+					<h4 style="margin-bottom:-5px; margin-top:0;">James Knight</h4>
+					<span class="subtitle">DEVELOPER</span>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Nam pulvinar tempus augue sed lobortis. Ut ultricies
+						molestie euismod. Proin auctor iaculis lorem eget eleifend.
+						Sed id massa eget urna suscipit porta tincidunt vel enim.
+						Proin convallis pulvinar augue, molestie semper metus euismod eget. Vestibulum nec ipsum vel quam sagittis interdum. In eu odio et massa vestibulum scelerisque vitae id odio. Nullam sed mi enim, ut accumsan massa.
+					</p>
+				</div>
+				
+			</div>
+		</section>
+		<section class="footer fullwidth">
+			<footer class="row">
+				<div class="col_12 centered" style="">
+					<h6 class="sans white helv">EMBERI CO. &copy; 2012 &nbsp; | &nbsp; TROY, NY &nbsp; | &nbsp; LAS VEGAS, NV &nbsp; | &nbsp; 781 4 EMBERI</h6>
+				</div>
+				<div class="col_3">
+					<ul class="vertical">
+						<li class="title">
+							WHAT WE DO
+						</li>
+						<li>
+							<a href="projects/apps/">Mobile App</a>
+						</li>
+						<li>
+							<a href="projects/webapps/">Rich Web Apps</a>
+						</li>
+						<li>
+							<a href="projects/branding/">Identity/Branding</a>
+						</li>
+						<li>
+							<a href="projects/websites/">Web Design + Development</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col_3">
+					<ul class="vertical">
+						<li class="title">
+							WHO WE ARE
+						</li>
+						<li>
+							<a href="aboutus/ethan/">Ethan Bond</a>
+						</li>
+						<li>
+							<a href="aboutus/james/">James Knight</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col_3">
+					<ul class="vertical">
+						<li class="title">
+							THINGS WE'VE DONE
+						</li>
+						<li>
+							<a href="projects/romotive/">Romotive</a>
+						</li>
+						<li>
+							<a href="projects/storm/">Storm</a>
+						</li>
+						<li>
+							<a href="projects/">Smaller Projects</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col_3 last">
+					<ul class="vertical">
+						<li class="title">
+							SAY HI
+						</li>
+						<li>
+							<a href="contact/">Contact Form</a>
+						</li>
+						<li>
+							<a href="mailto:hi@emberi.co">hi@emberi.co</a>
+						</li>
+						<li>
+							<a href="http://twitter.com/emberico">@emberico</a>
+						</li>
+						<li>
+							<a href="#">781 4 EMBERI</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+	</body>
+</html>

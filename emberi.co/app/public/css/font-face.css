@@ -1,0 +1,30 @@
+@font-face {  
+font-family: 'Baskerville';  
+src: url('../fonts/BaskervilleNormal.otf');  
+}
+
+@font-face {  
+font-family: 'BaskervilleBold';  
+src: url('../fonts/BaskervilleBold.otf');  
+}  
+
+@font-face {  
+font-family: 'BaskervilleItalic';  
+src: url('../fonts/BaskervilleItalic.otf');  
+}
+
+@font-face {  
+font-family: 'AvenirHeavy';  
+src: url('../fonts/AvenirHeavy.otf');  
+}
+
+@font-face {  
+font-family: 'AvenirBlack';  
+src: url('../fonts/AvenirBlack.otf');  
+}
+
+@font-face {  
+font-family: 'Avenir';  
+src: url('../fonts/Avenir.otf');  
+}
+

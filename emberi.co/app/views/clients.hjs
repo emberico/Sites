@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>EMBERI CO. // Projects</title>
+		<meta name="description" content="A design and development team that creates incredibly intuitive websites and software." />
+		<meta name="author" content="Ethan Bond and James Knight" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		
+		<base href="http://emberi.co" />
+		
+		<link rel="shortcut icon" href="../images/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" type="text/css" href="css/font-face.css">
+		<link rel="stylesheet" type="text/css" href="css/grid.css">
+		<link rel="stylesheet" type="text/css" href="css/ie.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/interior.css">
+		<style>
+		</style>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+
+				$(".header, .navigation").siblings().hide();
+				$(".header, .navigation").siblings().fadeIn();
+
+				var logoHeight = $(".header").height();
+				var headHeight = logoHeight + $(".navigation").height();
+				var photoHeight = $(window).height() - headHeight + 100;
+
+				$(".fullheight").height(photoHeight);
+
+				
+				//		if(originalTriangleOffset == undefined){
+				//			var originalTriangleOffset = $(".triangle").offset();
+				//			var originalTriangleOffset = originalTriangleOffset.left;
+				//		};
+				//
+				//
+				//		$(".triangle").css("left", function(){
+				//			var triangleOffset = $("li a.active").offset();
+				//			var triangleOffset = triangleOffset.left - originalTriangleOffset;
+				//			return triangleOffset;
+				//		});
+				//
+				//		var originalTrianglePosition = $(".triangle").css("left");
+				//
+				//		var offset = $("ul.horizontal").offset();
+				//		var offset = offset.left;
+				//
+				//		$("ul.horizontal").mousemove(function(e){
+				//			var xcoord = e.pageX;
+				//			var xcoord = xcoord - offset;
+				//			$(".triangle").css("left", xcoord);
+				//		});
+				//
+				//		$("ul.horizontal").mouseleave(function(){
+				//			$(".triangle").animate({left: originalTrianglePosition});
+				//		});
+				//
+
+			});
+
+		</script>
+	</head>
+	<body>
+		<section class="header fullwidth">
+			<header class="row">
+				<!--- <div class="col_12 centered" id="hs1">
+				<h5 class="sans bold white">WE ARE</h6>
+				</div>
+				---->
+				<a href="http://emberi.co">
+				<div class="col_12 centered" id="hsMain">
+					<p style="font-size: 10px; font-family:Helvetica, Arial, sans-serif; font-weight:bold; color: #7b7b7b;">
+						WEB, MOBILE, AND MORE
+					</p>
+				</div> </a>
+				<!--- <div class="col_12 centered" id="hs2">
+				<h5 class="sans bold white">A DESIGN + DEVELOPMENT DUO</h6>
+				<p style="font-size: 10px; font-family:Helvetica, Arial, sans-serif; font-weight:bold; color: #7b7b7b;">
+				WEB, MOBILE, AND MORE
+				</p>
+				</div>
+				---->
+			</header>
+		</section>
+		<section class="navigation fullwidth">
+			<nav class="row">
+				<div class="col_12 centered">
+					<ul class="horizontal">
+						<div class="triangle" style="margin-left: 203px;"></div>
+						<li class="first">
+							<a href="http://emberi.co">HOME</a>
+						</li>
+						<li>
+							<a href="blog/">BLOG</a>
+						</li>
+						<li>
+							<a href="clients/" class="active">CLIENTS</a>
+						</li>
+						<li>
+							<a href="aboutus/">ABOUT US</a>
+						</li>
+						<li>
+							<a href="contact/">CONTACT</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</section>
+		<section class="crossbar fullwidth" style="background: url('../images/green.jpg') no-repeat center center fixed;">
+			<div class="row headbar">
+				<div class="col_12 centered">
+					<h1 class="big italic">We like what we do.</h1>
+					<h5 class="sans subhead">
+						Here's a brief list of a few others<br>
+						that like our work too.
+					</h5>
+				</div>
+			</div>
+		</section>
+<!-----
+		<section class="content fullwidth">
+			<div class="row contentarea">
+				<div class="col_6 piece">
+					<img src="#" alt=""/>
+					<div class="hover">
+						<h4 class="white sans bold">ROMOTIVE</h4>
+						<p style="color: white;">
+							Lorem ipsum
+						</p>
+					</div>
+				</div>
+				<div class="col_3 piece">
+					<img src="#" alt=""/>
+					<div class="hover">
+						
+					</div>
+				</div>
+				<div class="col_3 piece last">
+					<img src="#" alt=""/>
+					<div class="hover">
+						
+					</div>
+				</div>
+				
+				
+				<div class="col_3 piece">
+					<img src="#" alt=""/>
+					<div class="hover">
+						
+					</div>
+				</div>
+				<div class="col_4 piece">
+					<img src="#" alt=""/>
+					<div class="hover">
+						
+					</div>
+				</div>
+				<div class="col_2 piece">
+					<img src="#" alt=""/>
+					<div class="hover">
+						
+					</div>
+				</div>
+				
+				<div class="col_3 piece last">
+					<img src="#" alt=""/>
+					<div class="hover">
+						
+					</div>
+				</div>
+				
+				
+			</div>
+		</section>
+		--->
+		<section class="content fullwidth">
+			<div class="row contentarea">
+				<div class="col_8">
+					<h4 style="margin-bottom:-5px;">Romotive</h4>
+					<span class="subtitle">
+						BRANDING, WEB, MOBILE DESIGN + DEVELOPMENT
+					</span>
+					<p>
+						Both sides of the Emberi Co. duo were brought to
+						Romotive's Las Vegas offices to work on designing
+						and developing the company's image and software.
+						Ethan worked on establishing a coherent, approachable
+						brand that had modern cleanliness and minimalism.
+						James focused his attention on leading the software development
+						team to meet harsh lean startup deadlines and getting finalized
+						products out the door.
+					</p>
+				</div>
+				<div class="col_4 last">
+					<h4 style="margin-bottom:-5px;">Unlimify</h4>
+					<span class="subtitle">
+						BRANDING, WEB
+					</span>
+					<p>
+						Emberi Co. was hired to design the brand and website of
+						upcoming startup Unlimify which seeks to shake up the 
+						wireless service scene.
+					</p>
+				</div>
+				<div class="col_4">
+					<h4 style="margin-bottom:-5px;">Alluring Spaces, LLC.</h4>
+					<span class="subtitle">
+						WEB DESIGN + DEVELOPMENT
+					</span>
+					<p>
+						New Jersey based interior decorators Alluring Spaces
+						asked us to create a simple and effective website that
+						seeks to revamp their brand. We created exactly that, and
+						transformed an outdated website into a sleek, modern,
+						functional, and informative one.
+					</p>
+				</div>
+				<div class="col_4">
+					<h4 style="margin-bottom:-5px;">2XL Games</h4>
+					<span class="subtitle">
+						MOBILE DEVELOPMENT
+					</span>
+					<p>
+						The development-side of Emberi Co. worked for 2XL Games
+						out of Phoenix where he envisioned and created
+						exciting mobile games. Implementing multiplayer capabilities
+						was James' main task, and his work has been praised by the
+						Android gaming community.
+					</p>
+				</div>
+				<div class="col_4 last">
+					<h4 style="margin-bottom:-5px;">You!</h4>
+					<span class="subtitle">
+						LET'S TALK A BIT
+					</span>
+					<p>
+						Do you like our work as much as these other folks did?
+						Head over to the <a href="contact/">contact page</a> and see if we can help
+						you out with your latest project. Chances are, we're
+						looking for some sort of adventure!
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="footer fullwidth">
+			<footer class="row">
+				<div class="col_12 centered" style="">
+					<h6 class="sans white helv">EMBERI CO. &copy; 2012 &nbsp; | &nbsp; TROY, NY &nbsp; | &nbsp; LAS VEGAS, NV &nbsp; | &nbsp; 781 4 EMBERI</h6>
+				</div>
+				<div class="col_3">
+					<ul class="vertical">
+						<li class="title">
+							WHAT WE DO
+						</li>
+						<li>
+							<a href="projects/apps/">Mobile App</a>
+						</li>
+						<li>
+							<a href="projects/webapps/">Rich Web Apps</a>
+						</li>
+						<li>
+							<a href="projects/branding/">Identity/Branding</a>
+						</li>
+						<li>
+							<a href="projects/websites/">Web Design + Development</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col_3">
+					<ul class="vertical">
+						<li class="title">
+							WHO WE ARE
+						</li>
+						<li>
+							<a href="aboutus/ethan/">Ethan Bond</a>
+						</li>
+						<li>
+							<a href="aboutus/james/">James Knight</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col_3">
+					<ul class="vertical">
+						<li class="title">
+							THINGS WE'VE DONE
+						</li>
+						<li>
+							<a href="projects/romotive/">Romotive</a>
+						</li>
+						<li>
+							<a href="projects/storm/">Storm</a>
+						</li>
+						<li>
+							<a href="projects/">Smaller Projects</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col_3 last">
+					<ul class="vertical">
+						<li class="title">
+							SAY HI
+						</li>
+						<li>
+							<a href="contact/">Contact Form</a>
+						</li>
+						<li>
+							<a href="mailto:hi@emberi.co">hi@emberi.co</a>
+						</li>
+						<li>
+							<a href="http://twitter.com/emberico">@emberico</a>
+						</li>
+						<li>
+							<a href="#">781 4 EMBERI</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+	</body>
+</html>

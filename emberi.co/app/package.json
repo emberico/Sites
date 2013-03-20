@@ -1,0 +1,14 @@
+{
+  "name": "Emberi-Co-Website",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "coffee app"
+  },
+  "dependencies": {
+    "connect-assets": "2.4.0",
+    "express": "3.1.0",
+    "hjs": "*",
+    "less-middleware": "*"
+  }
+}

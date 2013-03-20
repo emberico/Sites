@@ -1,0 +1,164 @@
+html {
+	background-color: @grey;
+}
+
+/************** VARIABLES **********/
+@orange: #ff8400;
+@grey: #333;
+
+/************** STANDARDS **********/
+.rounded {border-radius: 2px; -moz-border-radius: 2px;}
+.hidden {display:none;}
+
+/************** FONTS **************/
+span {font-size: 12px; font-family: "AvenirHeavy", Helvetica, Arial, sans-serif;}
+
+h1, h2, h3, h4, h5, h6, p, a, span {color: @grey; font-weight:normal;}
+h1.white, h2.white, h3.white, h4.white, h5.white, h6.white, p.white, span.white {color: white;}
+h1.orange, h2.orange, h3.orange, h4.orange, h5.orange, h6.orange, p.orange, span.orange {color: @orange;}
+h1, h2, h3, h4, h5, h6 {font-family: "Average", Georgia, Times New Roman, serif;}
+h1.italic, h2.italic, h3.italic, h4.italic, h5.italic, h6.italic {font-family: "BaskervilleItalic", Georgia, Times New Roman, serif;}
+h1.sans, h2.sans, h3.sans, h4.sans, h5.sans, h6.sans {font-family: "AvenirHeavy", Helvetica, Arial, sans-serif;}
+h1.sans.bold, h2.sans.bold, h3.sans.bold, h4.sans.bold, h5.sans.bold, h6.sans.bold, span.bold {font-family: Helvetica, Arial, sans-serif;}
+h1.sans.bold, h2.sans.bold, h3.sans.bold, h4.sans.bold, h5.sans.bold, h6.sans.bold, span.bold {font-family: "AvenirBlack";}
+
+h1 {font-size: 36px;}
+	h1.big {font-size: 48px;}
+h2 {font-size: 28px;}
+h3 {font-size: 24px;}
+h4 {font-size: 18px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;}
+
+a {font-size: 12px;}
+
+p {font-size: 13px; font-family: "Average", serif; color: #7a7a7a;}
+p.bold {font-weight: bold;}
+p.italic {font-style: italic;}
+
+h1.helv, h2.helv, h3.helv, h4.helv, h5.helv, h6.helv, p.helv, a.helv, span.helv {font-family: "Helvetica", Arial, sans-serif;}
+
+/****************** LAYOUT ****************/
+.fullwidth {width: 100%;}
+.centered {text-align:center;}
+ul.horizontal li {display: inline; margin-left: 30px;}
+ul.horizontal li.first {margin-left: 0;}
+
+/****************** HEADER ****************/
+
+header {position:relative;}
+
+section.header {
+	height: 100px;
+	background-image: url('../images/background.png');
+	background-repeat: repeat-x repeat-y;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+
+#hsMain {
+	height: 30px;
+	margin-top: 5px;
+	background-image: url('../images/logo.png');
+	padding-top: 50px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/****************** NAVIGATION *****************/
+
+section.navigation {
+	background-color: white;
+	height: 50px;
+	position: fixed;
+	top: 100px;
+	z-index: 1000;
+}
+
+nav div {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+a, a:visited {
+	color: #a5a5a5;
+	text-decoration: none;
+	transition: color .25s ease-in-out;
+	-moz-transition: color .25s ease-in-out;
+	-webkit-transition: color .25s ease-in-out;
+}
+
+a:hover {color: @orange;}
+a.active {font-family: "Avenir", Helvetica, Arial, sans-serif; color: black;}
+
+nav div ul li a {
+	font-size: 11px;
+	}
+	
+nav div ul{
+	width: 50%;
+	margin: 0 25% 0 25%;
+	transform: scale(1.1, 1);
+	-ms-transform: scale(1.1,1);
+	-webkit-transform: scale(1.1,1); 
+	-o-transform: scale(1.1,1);
+	-moz-transform: scale(1.1,1);
+	position:relative;
+}
+
+nav div ul li {
+	
+}
+
+.triangle {
+	background-color: transparent;
+	height:0;
+	width:0;
+	border-style: solid;
+	border-color: white transparent transparent transparent;
+	border-width: 10px 20px 10px 20px;
+	position:absolute;
+	bottom: -55px;
+}
+
+
+/******************* FOOTER *********************/
+section.footer {
+	background-image: url('../images/background.png');
+	background-repeat: repeat-x repeat-y;
+}
+
+footer .col_12 {
+  padding-bottom: 10px;
+}
+
+ul.vertical {
+	
+	li {
+		margin-bottom: -7px;
+	}
+	
+	list-style: none;
+	
+	li a {
+		font-family: "Avenir", Helvetica, Arial, sans-serif;
+		font-weight: normal;
+		font-size: 12px;
+		color: #636363;
+		transition: color .1s ease-in-out;
+		-moz-transition: color .1s ease-in-out;
+		-webkit-transition: color .1s ease-in-out;
+	}
+	
+	li a:hover {
+		color: white;
+	}
+	
+	li.title {
+		margin-bottom: 2px;
+		font-family: "AvenirHeavy", Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		color: white;
+	}
+}
