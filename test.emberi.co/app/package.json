@@ -1,9 +1,9 @@
 {
-  "name": "application-name",
+  "name": "emberi-test",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app"
+    "start": "coffee app.coffee"
   },
   "dependencies": {
     "coffee-script": "*",
