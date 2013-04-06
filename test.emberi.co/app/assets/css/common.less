@@ -44,10 +44,7 @@ header {
 	}
 }
 #banner {
-	background: #ff8235 url('http://25.media.tumblr.com/add7bbf435fc4099fba4a797e0935602/tumblr_mkqkv4UMtM1s7f3fyo1_1280.jpg') center center no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	max-width: 1200px;
+	max-width: 1300px;
 	margin-bottom: -28em;
 	height: 28em;
 	padding-top: 7em;
@@ -69,6 +66,14 @@ header {
 		font-family: @bodyFont;
 		font-size: 100%;
 		line-height: 170%;
+		a {
+			font-family: inherit;
+			color: #e97c65;
+			transition:opacity 150ms;
+			&:hover {
+				opacity: .5;
+			}
+		}
 	}
 	.row:first-child{
 		padding-top:4em;

@@ -2,35 +2,29 @@
 <html lang="en">
     {{>head}}
     <body>
-		<div class="row" id="banner">
+		<div class="row" id="banner" style="background: #fff url('{{bannerImage}}') center bottom no-repeat; background-size: cover; background-attachment: fixed;">
 			<div class="col_2">&nbsp;</div>
 			<div class="col_8 pageTitling invert">
-				<span class="supertitle small">WE ARE EMBERI CO.</span>
-				<h1 class="huge">Human centered product design & development</h1>
+				<span class="supertitle small">
+					{{superTitle}}
+				</span>
+				<h1 class="huge">
+					{{title}}
+				</h1>
 			</div>
 			<div class="col_2 last">&nbsp;</div>
 		</div>
-		<header class="row">
-			<div class="logo col_3">&nbsp;</div>
-			<nav class="col_9 last">
-				<ul class="horizontal">
-					<li><a href="home" class="active">HOME</a></li>
-					<li><a href="philosophy">PHILOSOPHY</a></li>
-					<li><a href="process">PROCESS</a></li>
-					<li><a href="people">PEOPLE</a></li>
-					<li><a href="portfolio">PORTFOLIO</a></li>
-					<li><a href="contact">CONTACT</a></li>
-				</ul>
-			</nav>
-		</header>
+		{{>header}}
 		<div class="content">
 			<div class="row">
 				<div class="col_2">&nbsp;</div>
 				<div class="col_7">
 					<h1>We develop interactions</h1>
 					<p>
-						Every product is a conversation. Each interaction is an exchange. Emberi Co. makes every exchange between you and your user worthwhile through strong design and efficient implementation. We're a two-person design and development team that works closely with your team not simply to solve problems, but to accomplish your goals.
+						Every product is a conversation. Each interaction is an exchange. Emberi Co. makes every single interaction between you and your user worthwhile through formal design and inventive development. We're <a href="team">interaction developers</a>, a team of one designer and one developer, who work closely with each other and your team not simply to solve problems, but to accomplish the goals that drive you.
 					</p>
+					<h3>Lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, obcaecati, voluptatum dicta non voluptate repellendus omnis quidem quae maiores amet eaque nesciunt temporibus eum similique nam aliquid nihil dolore! Deleniti.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, non, sequi, quod, tempore distinctio aliquam esse eum hic vero facere suscipit illo soluta magni fugit magnam pariatur impedit nesciunt unde.</p>
 				</div>
 				<div class="col_3 last">&nbsp;</div>
 			</div>
