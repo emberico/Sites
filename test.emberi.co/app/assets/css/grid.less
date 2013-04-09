@@ -114,6 +114,10 @@ p.alt, ul.alt, span.alt, a.alt {
 h1.script, h2.script, h3.script, h4.script, h5.script, h6.script, p.script, ul.script, span.script {
 	.paragraphScript;
 	font-family: @headerFont}
+h1.italics, h2.italics, h3.italics, h4.italics, h5.italics, h6.italics, p.italics, ul.italics, span.italics {
+	font-family: inherit;
+	font-style: italic;
+}
 h1.white, h2.white, h3.white, h4.white, h5.white, h6.white, p.white, ul.white, span.white {color: white;}
 
 
@@ -184,7 +188,7 @@ h1 + .subtitle, h2 + .subtitle{
 }
 p{
 	& + p {
-		margin-top: .5em;
+		margin-top: 1em;
 	}
 	& + h1 {
 		margin-top: .5em;
@@ -290,7 +294,7 @@ img {
 .col_12 {clear: both; width: 100%; float: left;}
 .last {margin-right: 0 !important;}
 
-.nogutter .col_1, .nogutter .col_2, .nogutter .col_3, .nogutter .col_4, .nogutter .col_5, .nogutter .col_6, .nogutter .col_7, .nogutter .col_8, .nogutter .col_9, .nogutter .col_10, .nogutter .col_11 {float: left; margin-right:0 !important;position: relative;}
+.nogutter .col_1, .nogutter .col_2, .nogutter .col_3, .nogutter .col_4, .nogutter .col_5, .nogutter .col_6, .nogutter .col_7, .nogutter .col_8, .nogutter .col_9, .nogutter .col_10, .nogutter .col_11 {float: left; margin-right:0 !important;position: relative; padding:2em;}
 .nogutter .col_1 {width: percentage(1/12)}  
 .nogutter .col_2 {width: percentage(2/12)}  
 .nogutter .col_3 {width: percentage(3/12)} 
@@ -344,6 +348,18 @@ img {
 
 	.mobile-hide {display: none;}
 	.mobile-only {display: block;}
+
+
+	.nogutter .col_1, .nogutter .col_2, .nogutter .col_3, .nogutter .col_4, .nogutter .col_5, .nogutter .col_6, .nogutter .col_7, .nogutter .col_8, .nogutter .col_9, .nogutter .col_10, .nogutter .col_11 {
+		clear: both;
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left:1em;
+		padding-right:1em;
+		width: auto;
+		width: -moz-available;
+	}
 
 }
 
