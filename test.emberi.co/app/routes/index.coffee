@@ -7,8 +7,24 @@ exports.index = (req, res) ->
 
 
 exports.philosophy = (req, res) ->
-    res.render "index",
+    res.render "philosophy",
     superTitle: "We are human",
-    bannerImage: "http://25.media.tumblr.com/200ef79f26e629e5d16604f1e965023a/tumblr_mjv2ynE0Kx1s7f3fyo1_1280.jpg",
-    subTitle: "web &times; mobile &times; anywhere",
+    bannerImage: "http://25.media.tumblr.com/add7bbf435fc4099fba4a797e0935602/tumblr_mkqkv4UMtM1s7f3fyo1_1280.jpg",
+    subTitle: "OVERCOME LIMITATIONS, EXPAND CAPABILITIES",
     title: "Interaction development for the human condition"
+
+exports.people = (req, res) ->
+    res.render "index"
+
+exports.process = (req, res) ->
+    res.render "index"
+
+exports.portfolio = (req, res) ->
+    res.render "index"
+
+exports.contact = (req, res) ->
+    res.render "index"
+
+exports.test = (req, res) ->
+    res.render "index",
+    content: res.get "test"

@@ -12,25 +12,21 @@ body {
 
 header {
 	background-color: black;
-	height:4em;
 	padding: 1em 3em 1em 3em;
 	vertical-align: middle;
 	.logo {
-		height: 100%;
 		background: url('../public/images/logo.png') 0 center no-repeat;
-		background-size: 40%;
+		background-size: 7em;
 	}
 	nav {
-		height:100%;
 		color:white;
 		ul {
-			height:100%;
 			margin-bottom:0;
 			margin-top: .5em;
 			text-align:right;
 			a {
 				font-size: .6em;
-				letter-spacing: 1px;
+				letter-spacing: .01em;
 				opacity: .6;
 				transition: opacity 100ms;
 				&:hover {
@@ -44,10 +40,19 @@ header {
 	}
 }
 #banner {
-	max-width: 1300px;
-	margin-bottom: -28em;
-	height: 28em;
-	padding-top: 7em;
+	width: 77em;
+	position: absolute;
+	top:0;
+	z-index:-100;
+	left: 50%;
+	overflow: visible;
+	&>div{
+		left:-50%;
+		padding-top:7em;
+		padding-bottom: 5em;
+		position:relative;
+		width:100%;
+	}
 	.pageTitling {
 		.textcenter;
 		.paragraphAlt;
@@ -65,9 +70,10 @@ header {
 
 .content {
 	.paragraphAlt;
-	padding-top: 24em;
+	padding-top: 24.3em;
 	padding-left: 4em;
 	padding-right:4em;
+	z-index: 100;
 	p {
 		font-family: @bodyFont;
 		font-size: 100%;
@@ -91,4 +97,35 @@ header {
 footer {
 	padding-top: 2em;
 	padding-bottom:2em;
+}
+
+
+.button {
+	color:#d15740;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 1em;
+	border-radius: .25em;
+	font-size: .5em;
+	letter-spacing: .2em;
+	border: 2px solid #d15740;
+	transition:background-color 200ms;
+	&:hover{
+		background-color: rgba(0,0,0, .05);
+	}
+}
+
+.fancyTitle {
+	.textcenter;
+	text-transform: uppercase;
+	letter-spacing: .125em;
+}
+
+.fancyAbstract {
+	.textcenter;
+	margin-bottom: 2.5em;
+	margin-top: -1em;
+	line-height: 160%;
+	text-transform: uppercase;
+	padding-bottom:2.5em;
 }

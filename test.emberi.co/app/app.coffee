@@ -32,6 +32,11 @@ app.configure "development", ->
 
 app.get "/", routes.index
 app.get "/philosophy/", routes.philosophy
+app.get "/people/", routes.people
+app.get "/process/", routes.process
+app.get "/portfolio/", routes.portfolio
+app.get "/contact/", routes.contact
+app.get "/test/", routes.test
 
 http.createServer(app).listen app.get("port"), ->
     console.log "Express server listening on port " + app.get("port")
