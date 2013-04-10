@@ -2,10 +2,13 @@
 
 .services{
 	.paragraphAlt;
-	margin-top: -3em;
 	background-color: #fff;
+	margin-top: -1em;
+	.note {
+		margin-top: 2em;
+	}
 	h5 {
-		letter-spacing: 3px;
+		letter-spacing: unit(3/16, ~'em');
 		font-family: @fontSans;
 		font-weight: bold;
 	}
@@ -14,20 +17,6 @@
 		margin-bottom:1em;
 		font-size: .9em;
 		.textleft;
-	}
-	.button {
-		color:#d15740;
-		font-weight: bold;
-		text-transform: uppercase;
-		padding: 1em;
-		border-radius: 4px;
-		font-size: .5em;
-		letter-spacing: 1px;
-		border: 2px solid #d15740;
-		transition:background-color 200ms;
-		&:hover{
-			background-color: rgba(0,0,0, .05);
-		}
 	}
 	.interaction {
 		margin-top: 5em;
@@ -51,13 +40,14 @@
 			margin-left:0;
 			opacity: .9;
 			color:white;
-			border:2px solid white;
+			border:unit(2/16, ~'em') solid white;
 		}
+		padding-top: 4em;
 		padding-bottom:4em;
 	}
 }
 
-@media handheld, only screen and (max-width: 767px) {
+@media handheld, only screen and (max-width: 47.9375em) {
 	.services {
 		margin-top: -5em;
 		.web {

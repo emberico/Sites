@@ -12,7 +12,8 @@ body {
 
 header {
 	background-color: black;
-	padding: 1em 3em 1em 3em;
+	min-height: 4em;
+	padding: 1em 3em 1em 3em !important;
 	vertical-align: middle;
 	.logo {
 		background: url('../public/images/logo.png') 0 center no-repeat;
@@ -41,6 +42,7 @@ header {
 }
 #banner {
 	width: 77em;
+	padding: 0;
 	position: absolute;
 	top:0;
 	z-index:-100;
@@ -50,6 +52,7 @@ header {
 		left:-50%;
 		padding-top:7em;
 		padding-bottom: 5em;
+		padding-left: 5em;
 		position:relative;
 		width:100%;
 	}
@@ -70,14 +73,14 @@ header {
 
 .content {
 	.paragraphAlt;
-	padding-top: 24.3em;
 	padding-left: 4em;
 	padding-right:4em;
+	margin-top: 28.7em;
 	z-index: 100;
 	p {
 		font-family: @bodyFont;
 		font-size: 100%;
-		line-height: 170%;
+		line-height: 1.7em;
 		a {
 			font-family: inherit;
 			color: #e97c65;
@@ -87,10 +90,17 @@ header {
 			}
 		}
 	}
-	.row:first-child{
+	& > div.row {
 		padding-top:4em;
-		padding-bottom: 5em;
 		background-color: white;
+	}
+	.note {
+		background-color: #f5f7eb;
+		padding:1em 2em 1em 2em;
+		p {
+			font-family: @fontSans;
+		}
+
 	}
 }
 
@@ -107,8 +117,8 @@ footer {
 	padding: 1em;
 	border-radius: .25em;
 	font-size: .5em;
-	letter-spacing: .2em;
-	border: 2px solid #d15740;
+	letter-spacing: .2em !important;
+	border: .125em solid #d15740;
 	transition:background-color 200ms;
 	&:hover{
 		background-color: rgba(0,0,0, .05);
@@ -125,7 +135,89 @@ footer {
 	.textcenter;
 	margin-bottom: 2.5em;
 	margin-top: -1em;
-	line-height: 160%;
+	line-height: 1.5em;
 	text-transform: uppercase;
 	padding-bottom:2.5em;
 }
+
+.button {
+		color:#d15740;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 1em;
+		border-radius: unit(4/16, ~'em');
+		font-size: .5em;
+		letter-spacing: unit(1/16, ~'em');
+		border: unit(2/16, ~'em') solid #d15740;
+		transition:background-color 200ms;
+		&:hover{
+			background-color: rgba(0,0,0, .05);
+		}
+	}
+
+.iconContainer {
+	background-color: #f5f7eb !important;
+	padding-bottom:6em;
+}
+
+#iconBanner {
+	.textcenter;
+	.button {
+		border:unit(3/16, ~'em') solid rgba(0,0,0,.3);
+		font-weight: normal;
+	}
+	* {
+		color: rgba(0,0,0,.5);
+	}
+	span {
+		vertical-align: middle !important;		
+	}
+	.icon {
+		margin-left: .25em;
+		margin-right: .25em;
+	}
+}
+
+
+@media handheld, only screen and (max-width: 48em) {
+	header {
+		.logo {
+			background-position: center center;
+		}
+		nav {
+			float:none;
+			ul {
+				.textcenter;
+				li {
+					display: block !important;
+					margin-left: 0 !important;
+				}
+			}
+		}
+	}
+	#banner {
+		top:15em !important;
+	}
+	
+	.content {
+		.row:first-child {
+			padding-top:0 !important;
+		}
+	}
+
+}
+
+.sans {
+	font-family: @fontSans !important;
+}
+.bold {
+	font-weight: bold !important;
+}
+
+.hulksmash {font-size: 600% !important}
+.huge {font-size: 400% !important}
+.big {font-size: 200% !important}
+.small {font-size: 50% !important}
+.tiny {font-size: 20% !important}
+
+.invert {color: white;}

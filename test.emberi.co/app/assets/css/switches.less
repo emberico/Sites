@@ -1,0 +1,39 @@
+
+*.paragraphDefault{
+	.paragraphDefault;
+	h1, h2, h3, h4, h5, h6 {
+		font-family: @headerFont;
+		color: @headerColor;
+	}
+	p, ul, li, a {
+		font-family: @bodyFont;
+		color: @bodyColor;
+	}
+}
+
+*.paragraphAlt{
+	.paragraphAlt;
+	h1, h2, h3, h4, h5, h6 {
+		font-family: @headerFont !important;
+		color: @headerColor !important;
+	}
+	p, ul, li, a {
+		font-family: @bodyFont !important;
+		color: @bodyColor !important;
+	}
+}
+
+* {
+	.paragraphDefault;
+	font-family: @bodyFont;
+}
+
+*.alt{
+	.paragraphAlt;
+	font-family: @bodyFont;
+}
+
+.icon {
+	font-family: @fontIcon;
+	font-size: 2em;
+}

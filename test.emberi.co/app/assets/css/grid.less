@@ -7,6 +7,11 @@ Date: 3/2/2013
 URL: ethanbond.com
 ****************************************************/
 
+html {
+	overflow-x: hidden;
+}
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, img, small, strike, strong, sub, sup, tt, var,
@@ -49,6 +54,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {display: block;}
 body {
 	.paragraphDefault;
+	overflow-x: hidden;
 	line-height: 1;	
 	font-family: @fontSans;
 	color: @bodyColor;
@@ -189,7 +195,7 @@ p{
 		margin-top: 1em;
 	}
 	& + h1 {
-		margin-top: .5em;
+		margin-top: 2em;
 	}
 	& + h2 {
 		margin-bottom: .2em;
@@ -276,18 +282,18 @@ img {
 }
 
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11 {float: left; margin-right: 2.7em; position: relative;}
-.col_1 {width: 1/12*@baseWidth;}
-.col_2 {width: 2/12*@baseWidth;}  
-.col_3 {width: 3/12*@baseWidth;} 
-.col_4 {width: 4/12*@baseWidth;}	
-.col_5 {width: 5/12*@baseWidth;} 
-.col_6 {width: 6/12*@baseWidth;}	
-.col_7 {width: 7/12*@baseWidth;} 
-.col_8 {width: 8/12*@baseWidth;}	
-.col_9 {width: 9/12*@baseWidth;} 
-.col_10 {width: 10/12*@baseWidth;}
-.col_11 {width: 11/12*@baseWidth;}
-.col_12 {clear: both; width: @baseWidth; float: left;}
+.col_1 {width: (1/12*@baseWidth)-2.7;}
+.col_2 {width: (2/12*@baseWidth)-2.7;}  
+.col_3 {width: (3/12*@baseWidth)-2.7;} 
+.col_4 {width: (4/12*@baseWidth)-2.7;}	
+.col_5 {width: (5/12*@baseWidth)-2.7;} 
+.col_6 {width: (6/12*@baseWidth)-2.7;}	
+.col_7 {width: (7/12*@baseWidth)-2.7;} 
+.col_8 {width: (8/12*@baseWidth)-2.7;}	
+.col_9 {width: (9/12*@baseWidth)-2.7;} 
+.col_10 {width: (10/12*@baseWidth)-2.7;}
+.col_11 {width: (11/12*@baseWidth)-2.7;}
+.col_12 {clear: both; width: (@baseWidth); float: left;}
 .last {margin-right: 0 !important;}
 
 .nogutter .col_1, .nogutter .col_2, .nogutter .col_3, .nogutter .col_4, .nogutter .col_5, .nogutter .col_6, .nogutter .col_7, .nogutter .col_8, .nogutter .col_9, .nogutter .col_10, .nogutter .col_11 {float: left; margin-right:0 !important;position: relative; padding:2em;}
@@ -307,7 +313,7 @@ img {
 
 
 
-@media handheld, only screen and (max-width: 767px) {
+@media handheld, only screen and (max-width: 48em) {
 	.row, .body, .container, nav {
 		width: 100%;
 		margin-left:0;
@@ -349,9 +355,3 @@ img {
 
 }
 
-.huge {font-size: 400%;}
-.big {font-size: 200%;}
-.small {font-size: 50%;}
-.tiny {font-size: 20%;}
-
-.invert {color: white;}
