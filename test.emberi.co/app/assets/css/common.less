@@ -27,7 +27,7 @@ header {
 			text-align:right;
 			a {
 				font-size: .6em;
-				letter-spacing: .01em;
+				letter-spacing: .3em;
 				opacity: .6;
 				transition: opacity 100ms;
 				&:hover {
@@ -72,10 +72,12 @@ header {
 }
 
 .content {
+	background-color: #fff;
 	.paragraphAlt;
-	padding-left: 4em;
-	padding-right:4em;
+	width: 70em;
 	margin-top: 28.7em;
+	margin-left: auto;
+	margin-right: auto;
 	z-index: 100;
 	p {
 		font-family: @bodyFont;
@@ -93,6 +95,8 @@ header {
 	& > div.row {
 		padding-top:4em;
 		background-color: white;
+		padding-left:2.7em;
+		padding-right:2.7em;
 	}
 	.note {
 		background-color: #f5f7eb;
@@ -105,8 +109,11 @@ header {
 }
 
 footer {
-	padding-top: 2em;
-	padding-bottom:2em;
+	padding: 2em 2.7em 2em 2.7em;
+	background-color: #f78a53;
+	* {
+		color: white;
+	}
 }
 
 

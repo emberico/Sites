@@ -2,7 +2,7 @@ exports.index = (req, res) ->
     res.render "index", text: "Works!",
     superTitle: "We are Emberi Co.",
     title: "Human centered design & development",
-    subTitle: "digital product design",
+    subTitle: "digital interaction development",
     bannerImage: "http://25.media.tumblr.com/2988b36b2c7561dee008ae7b19a5d7f4/tumblr_mjwxfsnjvy1s7f3fyo1_1280.jpg"
 
 
