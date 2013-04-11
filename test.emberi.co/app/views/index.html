@@ -2,6 +2,8 @@
 <html lang="en">
     {{>head}}
     {{{css 'home'}}}
+    {{{js 'processing'}}}
+    {{{js 'processingCode'}}}
     <body>
 		{{>header}}
 		<div class="content" id="content">
@@ -13,6 +15,7 @@
 					<span class="icon hulksmash">💻</span>
 					<br>
 					<p class="sans">Apps and websites by Emberi Co. <br><br>
+						<a href="/portfolio/" class="button">PORTFOLIO</a>
 						<a href="/contact/" class="button">CONTACT US</a>
 					</p>
 				</div>
@@ -66,6 +69,9 @@
 					<p>These are our two favorite environments to work in, but design doesn't have a medium. We'll work with you on almost anything interesting. <a href="/contact/" class="button">Just ask</a> </p>
 				</div>
 				<div class="col_2 last">&nbsp;</div>
+				<canvas class="col_12" id="processing">
+					
+				</canvas>
 				<div class="col_12 interaction">
 					<div class="col_3">&nbsp;</div>
 					<div class="col_6">
